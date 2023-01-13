@@ -1,0 +1,253 @@
+body {
+    box-sizing: border-box; /* box-sizing property is used to control the size of an element's content box */
+    padding: 0;             /* By default, the box-sizing property has a value of content-box, which means that the width and height of an element are determined by its content only, and the padding and border are added outside of the element's dimensions.*/
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* font styling */
+}
+
+.navbar {
+    background: white;
+    height: 10vh;
+    display: flex; /* Konten menjadi horizontal */
+    padding: 0 5%;
+    align-items: center; /* memastikan konten ada ditengah kotak "jarak atas dan bawah sama" */
+    justify-content: space-between; /* mendorong konten mentok ke kanan dan ke kiri sesuai div nya*/
+    box-shadow: 0 4px 4px 0 rgba(1, 1, 1, 0.1);
+}
+
+.navbar > h1 {
+    font-weight: lighter;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px; /* mengatur jarak fix */
+    font-size: 18px;
+}
+
+.tombol-kontak {
+    border-radius: 10px;
+    border-color: lightgray;
+    background: white;
+    font-size: 18px;
+    padding: auto;
+}
+
+.tombol-kontak:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.hero-container::before {     /* this is pseudo element to change only backgorund opacity */
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('/asset/cash_1700x700.webp');
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-container {
+    height: 470px;
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    position: relative;
+    width: 70%;
+}
+
+.hero-text h1 {
+    position: relative;
+    font-size: 60px;
+    margin: 20px 0; /* margin atas bawah = 20px, margin kiri-kanan = 0px */
+}
+
+.hero-text p {
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+    width: 80%;
+}
+
+.hero-button {
+    position: relative;
+    width: 30%;
+    display: grid;
+    row-gap: 5px;
+    padding-right: 5%;
+}
+
+.tombol-daftar {
+    font-size: 24px;
+    border-radius: 10px;
+    border-color: lightgoldenrodyellow;
+    background: gold;
+    padding: 1% 0;
+}
+
+.tombol-daftar:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.tombol-lihat-kelas {
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: lightgray;
+    background: white;
+    padding: 1% 0;
+}
+
+.tombol-lihat-kelas:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+
+.promo-headline {
+    padding: 0 5%;
+}
+
+.promo-content {
+    height: 250px;
+    padding: 0 5%;
+    display: flex;
+}
+
+.promo-content > div {
+    align-self: center;
+    width: 50%;
+}
+
+.promo-p1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.promo-p2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.promo-p3 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.promo-content > img {
+    object-fit: cover;
+    width: 50%;
+}
+
+.kelas-headline {
+    padding: 0 5%;
+}
+
+.kelas-content {
+    min-height: 400px; /* supaya konten pas dengan tinggi section*/
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* memberi jarak antar grid */
+}
+
+.kelas-content > div {
+    box-shadow: 0 8px 12px 0 rgba(1, 1, 1, 0.1);
+}
+
+.kelas-card > img {
+    object-fit: fill;
+    height: 170px;
+    width: 100%;
+}
+
+.kelas-card:hover {
+    box-shadow: 0 8px 12px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.kelas-body {
+    padding: 0 10px;
+    height: 140px;
+}
+
+.kelas-body p {
+    color: gray;
+}
+
+.kelas-harga {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.harga-asli {
+    color: red;
+}
+
+.kelas-footer {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tombol-daftar-kecil {
+    font-size: 18px;
+    border-color: lightgoldenrodyellow;
+    background: gold;
+}
+
+.tombol-daftar-kecil:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.cs-landing-page {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gold;
+    padding: 0 5%;
+    margin: 5% 5% 0 5%;
+}
+
+.cs-landing-page > div > h1 {
+    font-size: 36px;
+}
+
+.cs-landing-page > div > button {
+    border-radius: 10px;
+    border-color: lightgray;
+    background: white;
+    font-size: 18px;
+    padding: 3% 5%;
+}
+
+.cs-landing-page > div > button:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.cs-landing-page > img {
+    object-fit: fill;
+    height: 500px;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+footer {
+    text-align: center;
+    padding: 0 0;
+    height: 5vh;
+}
